@@ -2,6 +2,9 @@
 const path = require('path');
 
 const nextConfig = {
+    output: 'export',
+    trailingSlash: true,
+    distDir: 'dist',
     sassOptions: {
         includePaths: [path.join(__dirname, 'styles')],
     },
