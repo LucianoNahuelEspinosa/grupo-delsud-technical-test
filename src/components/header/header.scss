@@ -1,0 +1,44 @@
+.header {
+    padding: 28px 0;
+    background: #FFF;
+    border-bottom: 1.5px solid #F0EFFB;
+
+    .header-holder {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin-left: -10px;
+        }
+
+        .burger-btn {
+            display: none;
+        }
+    }
+
+    @media (max-width: 1024px) {
+        padding: 16px 0;
+
+        .header-holder {
+            .burger-btn {
+                display: block;
+                background: none;
+                border: none;
+                outline: none !important;
+
+                img {
+                    margin-left: 0;
+                }
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

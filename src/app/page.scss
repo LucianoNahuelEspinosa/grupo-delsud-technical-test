@@ -1,0 +1,190 @@
+.signin-section-holder {
+    display: flex;
+
+    .signin-content {
+        flex: 1 0 0;
+
+        .form-wrap {
+            padding: 83px 0 197px;
+            background: #FFF;
+
+            .container {
+                max-width: 352px;
+
+                h1 {
+                    color: #000929;
+                    font-size: 32px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 125%;
+                    letter-spacing: -0.32px;
+                }
+
+                >p {
+                    color: #000929;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 150%;
+                    margin: 8px 0 24px;
+                    opacity: 0.5;
+                }
+
+                form {
+                    width: 100%;
+
+                    .file-input-holder {
+                        display: flex;
+                        align-items: center;
+                        gap: 9px;
+                        margin-bottom: 24px;
+
+                        button {
+                            background: none;
+                            outline: none !important;
+                            border: none;
+
+                            img {
+                                display: block;
+                                max-width: 100%;
+                                // height: auto;
+                                object-fit: cover;
+                                border-radius: 100%;
+                            }
+
+                            &:hover {
+                                cursor: pointer;
+                            }
+                        }
+                    }
+
+                    input:not([type="file"]) {
+                        display: block;
+                        width: -webkit-fill-available;
+                        font-family: '__Plus_Jakarta_Sans_d21556', '__Plus_Jakarta_Sans_Fallback_d21556';
+                        padding: 12px 16px;
+                        border-radius: 8px;
+                        border: 1px solid #E0DEF7;
+                        background: #F7F7FD;
+                        color: #000929;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 150%;
+                        margin-bottom: 24px;
+                        outline: none !important;
+                        transition: all .3s ease-in-out;
+
+                        &::placeholder {
+                            color: #0009297c;
+                        }
+                    }
+
+                    p {
+                        color: #6C727F;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 140%;
+                        text-align: center;
+
+                        a {
+                            color: #000929;
+                            font-weight: 700;
+                        }
+                    }
+
+                    .password-input {
+                        .password-holder {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            gap: 12px;
+                            padding: 12px 16px;
+                            border-radius: 8px;
+                            border: 1px solid #E0DEF7;
+                            background: #F7F7FD;
+                            margin-bottom: 11px;
+
+                            input {
+                                border: none;
+                                background: none;
+                                padding: 0;
+                                border-radius: 0;
+                                margin: 0;
+                            }
+
+                            button {
+                                background: none;
+                                border: none;
+                                outline: none !important;
+
+                                img {
+                                    display: block;
+                                    max-width: 100%;
+                                    height: auto;
+                                }
+
+                                &:hover {
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+                    }
+
+                    .submit-btn {
+                        display: block;
+                        width: 100%;
+                        padding: 12px 24px;
+                        border-radius: 8px;
+                        background: #7065F0;
+                        border: none;
+                        outline: none !important;
+                        color: #FFF;
+                        text-align: center;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 150%;
+                        margin: 25px auto 32px;
+                        transition: all .3s ease-in-out;
+
+                        &:hover {
+                            cursor: pointer;
+                            background: #645ad6;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .signin-banner {
+        display: block;
+        max-width: 70%;
+        height: auto;
+    }
+
+    @media (max-width: 1024px) {
+        .signin-content {
+            .form-wrap {
+                padding: 62px 0 34px;
+
+                .container {
+                    h1,
+                    >p {
+                        text-align: center;
+                    }
+
+                    .submit-btn {
+                        margin: 29px auto 20px;
+                    }
+                }
+            }
+        }
+
+        .signin-banner {
+            display: none;
+        }
+    }
+}
