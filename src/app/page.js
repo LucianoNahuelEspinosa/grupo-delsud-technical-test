@@ -66,7 +66,7 @@ export default function Home() {
 
               <div className="password-input">
                 <div className="password-holder">
-                  <input type={passVisible ? 'text' : 'password'} name="password" id="password" placeholder="Ingresá tu contraseña" pattern="[^\s]{8}" required />
+                  <input type={passVisible ? 'text' : 'password'} name="password" id="password" placeholder="Ingresá tu contraseña" minLength={8} required />
                   <button type="button" onClick={passwordHandle}>
                     <Image src="/assets/Outline.svg" alt="Outline" width={24} height={24} priority />
                   </button>
